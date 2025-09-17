@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <title>Abdo's link tree</title>
+    <style>
+      body {
+        text-align: center;
+        background: linear-gradient(to right, rgb(17, 164, 222), #00ffee);
+      }
+      .parent{
+          width: 50vw;
+          height: 50vw;
+          margin: 0 auto;  
+        
+      }
+      .MyImage{
+        width: 100%;  
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        border-style: solid;
+        border-color: rgba(78, 30, 221, 0.5);
+        border-width: 5px;
+        
+        
+      }
+      .MyImage:hover{
+          box-shadow: rgb(78, 30, 221, 0.5) 20px 20px 20px -20px;
+          cursor: pointer;
+          }
+      .welcome{
+        background-color: #00ffee;
+        border: 5px solid rgba(78, 30, 221, 0.5);
+        border-radius: 20px;
+        padding: 10px;
+        font-style: italic;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3)
+      }
+      .sub{
+        font-family: 'Gloria Hallelujah', cursive;
+        color: white;
+      }
+      a {
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(130, 130, 130);
+      }
+        .countainer{
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: transparent;
+            max-width: 800px;
+        }
+        .icon{
+            height: 100%;
+        }
+        .Notion,.Instagram,.Facebook, .Github {
+            
+            background-color: transparent;
+            height: 50px;
+            width: 50px;
+            padding: 0px;
+            border: none;
+            border-radius: 10px;
+        }
+        .Notion:hover,.Instagram:hover,.Facebook:hover, .Github:hover {
+            box-shadow: 0 4px 20px rgba(180, 180, 180, 0.5);
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <scsript src="/.main.js"></scsript>
+    <div class="parent">
+      <a href="images\IMG_20240916_182342.jpg" target="_blank">
+          <img 
+          class="MyImage" 
+          src="images\IMG_20240916_182342.jpg" 
+          alt="my image"
+          >
+        </img>
+      </a>
+    </div>
+    <h1 class="welcome">Welcome, greatefull to connect with you!</h1>
+    <h3 class="sub">here are my links 👇</h3>
+
+    <div class="countainer">
+        <button class="Notion" onclick="window.open('https://www.notion.so/a6772d06397442d2abc4a346b307fb8e?v=91828a1d2d1046c1b9b11cb7cab61ca4&source=copy_link')">
+            <img class="icon" src="images/icons8-notion-64.png" alt="Notion">
+        </button>
+
+        <button class="Instagram" onclick="window.open('https://www.instagram.com/abdo.o.temraz/')">
+            <img class="icon" src="images/Instagram_Glyph_Gradient.png" alt="Instagram">
+        </button>
+
+        <button class="Facebook" onclick="window.open('https:https://www.facebook.com/abdo.otemraz.10/')">
+            <img class="icon" src="images/Facebook_Logo_Primary.png" alt="Instagram">
+        </button>
+        <button class="Github" onclick="window.open('https://www.github.com/abdo-o-temraz')">
+            <img class="icon" src="images/github-mark.png" alt="Instagram">
+        </button>
+        
+    </div>
+  </body>
+</html>
