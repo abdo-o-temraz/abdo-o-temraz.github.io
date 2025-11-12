@@ -78,35 +78,34 @@
     <!-- Finisher script -->
     <script src="js/finisher-header.es5.min.js" type="text/javascript"></script>
     <script>
-      new FinisherHeader({
-        count: 3,
-        size: {
-          min: 1300,
-          max: 500,
-          pulse: 0,
-        },
-        speed: {
-          x: {
-            min: 2,
-            max: 2.5,
-          },
-          y: {
-            min: 2,
-            max: 2.5,
-          },
-        },
-        colors: {
-          background: "#ff00f7",
-          particles: ["#7300ff", "#00a3ff"],
-        },
-        blending: "lighten",
-        opacity: {
-          center: 1.3,
-          edge: 0.0,
-        },
-        skew: -1,
-        shapes: ["c"],
-      });
+new FinisherHeader({
+  "count": 15,  // fewer particles = calmer scene
+  "size": {
+    "min": 900,
+    "max": 1800,
+    "pulse": 0
+  },
+  "speed": {
+    "x": { "min": 0.2, "max": 0.8 },  // much slower
+    "y": { "min": 0.2, "max": 0.8 }
+  },
+  "colors": {
+    "background": "#1a0033",  // deep NFS purple base stays visible
+    "particles": [
+      "#ff00cc",  // neon pink
+      "#00eaff",  // calm cyan
+      "#9b00ff",  // violet
+      "#ff33a6"   // soft magenta-pink
+    ]
+  },
+  "blending": "normal",  // prevents over-brightening
+  "opacity": {
+    "center": 0.35,  // softer particle opacity
+    "edge": 0.0
+  },
+  "skew": 0,
+  "shapes": ["c"]
+});
     </script>
     <footer>
       <p class="footer">© 2025 Abdo Temraz. All rights reserved.</p>
