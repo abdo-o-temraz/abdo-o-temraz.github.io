@@ -79,29 +79,28 @@
     <script src="js/finisher-header.es5.min.js" type="text/javascript"></script>
     <script>
 new FinisherHeader({
-  "count": 15,  // fewer particles = calmer scene
+  "count": 3,  // fewer particles = calmer scene
   "size": {
-    "min": 900,
+    "min": 1200,
     "max": 1800,
     "pulse": 0
   },
   "speed": {
-    "x": { "min": 0.2, "max": 0.8 },  // much slower
-    "y": { "min": 0.2, "max": 0.8 }
+    "x": { "min": 0.5, "max": 1 },  // much slower
+    "y": { "min": 0.5, "max": 1 }
   },
   "colors": {
-    "background": "#1a0033",  // deep NFS purple base stays visible
+    "background": "#0d0221",  
     "particles": [
-      "#ff00cc",  // neon pink
-      "#00eaff",  // calm cyan
-      "#9b00ff",  // violet
-      "#ff33a6"   // soft magenta-pink
+      "#ff07f",  
+      "#00ffff",  
+      "#ff00ff"
     ]
   },
   "blending": "normal",  // prevents over-brightening
   "opacity": {
-    "center": 0.35,  // softer particle opacity
-    "edge": 0.0
+    "center": 3,  // softer particle opacity
+    "edge": -0.1
   },
   "skew": 0,
   "shapes": ["c"]
