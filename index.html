@@ -2,112 +2,289 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Abdo's link tree</title>
-    <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Abdo Temraz — a creative developer crafting modern digital experiences."
+    />
+    <title>Abdo Temraz | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="SVG/20250815_004334.png" type="image/x-icon" />
   </head>
   <body>
-    <!-- Animated background layer -->
     <div class="finisher-header"></div>
 
-    <!-- Content layer -->
-    <div class="content">
-      <div class="parent">
-        <img
-          class="MyImage"
-          src="SVG/20250815_004334.png"
-          alt="Portrait of Abdo Temraz"
-        />
-      </div>
-      <h1 class="welcome">Honored to connect with you</h1>
-      <h3 class="sub">here are my links 👇</h3>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#home">Abdelrhman Temraz</a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
 
-      <div class="container">
-        <button
-          class="Linkedin"
-          aria-label="LinkedIn"
-          onclick="window.open('https://www.linkedin.com/in/abdo-o-temraz', '_blank', 'noopener,noreferrer')"
-        >
-          <img
-            class="icon"
-            loading="lazy"
-            src="SVG/icons8-linkedin-48.+"
-            alt="Linkedin"
-          />
-        </button>
-        <button
-          class="Instagram"
-          aria-label="Instagram"
-          onclick="window.open('https://www.instagram.com/abdo.o.temraz/', '_blank', 'noopener,noreferrer')"
-        >
-          <img
-            class="icon"
-            loading="lazy"
-            src="SVG/Instagram_Glyph_Gradient.svg"
-            alt="Instagram"
-          />
-        </button>
-        <button
-          class="Facebook"
-          aria-label="Facebook"
-          onclick="window.open('https://www.facebook.com/abdo.otemraz.10/', '_blank', 'noopener,noreferrer')"
-        >
-          <img
-            class="icon"
-            loading="lazy"
-            src="SVG/Facebook_Logo_Primary.svg"
-            alt="Facebook"
-          />
-        </button>
-        <button
-          class="Github"
-          aria-label="Github"
-          onclick="window.open('https://www.github.com/abdo-o-temraz', '_blank', 'noopener,noreferrer')"
-        >
-          <img
-            class="icon"
-            loading="lazy"
-            src="SVG/github-mark.svg"
-            alt="Github"
-          />
-        </button>
-      </div>
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-visual">
+            <div class="portrait-frame">
+              <img
+                class="MyImage"
+                src="SVG/20250815_004334.png"
+                alt="Portrait of Abdo Temraz"
+              />
+            </div>
+          </div>
+
+          <div class="hero-copy">
+            <p class="eyebrow">Computer Science Undergraduate</p>
+            <h1>Abdelrhman Osama Temraz</h1>
+            <p class="lead">
+              Computer Science undergraduate with a strong interest in data analysis,
+              web development, and technical instruction. I build Python-based data
+              projects, create user-facing web experiences, and teach students practical
+              analytical skills with a focus on real-world application.
+            </p>
+
+            <div class="quick-facts">
+              <span>Giza, Egypt</span>
+              <span>abdo.o.temraz@gmail.com</span>
+            </div>
+
+            <div class="cta-row">
+              <a class="primary-btn" href="#projects">View projects</a>
+              <a class="secondary-btn" href="#contact">Hire me</a>
+            </div>
+
+            <div class="socials" aria-label="Social links">
+              <button
+                class="social-btn linkedin"
+                aria-label="LinkedIn"
+                onclick="window.open('https://www.linkedin.com/in/abdo-o-temraz', '_blank', 'noopener,noreferrer')"
+              >
+                <img
+                  class="icon"
+                  loading="lazy"
+                  src="SVG/icons8-linkedin-48.svg"
+                  alt="LinkedIn"
+                />
+              </button>
+              <button
+                class="social-btn instagram"
+                aria-label="Instagram"
+                onclick="window.open('https://www.instagram.com/abdo.o.temraz/', '_blank', 'noopener,noreferrer')"
+              >
+                <img
+                  class="icon"
+                  loading="lazy"
+                  src="SVG/Instagram_Glyph_Gradient.svg"
+                  alt="Instagram"
+                />
+              </button>
+              <button
+                class="social-btn facebook"
+                aria-label="Facebook"
+                onclick="window.open('https://www.facebook.com/abdo.otemraz.10/', '_blank', 'noopener,noreferrer')"
+              >
+                <img
+                  class="icon"
+                  loading="lazy"
+                  src="SVG/Facebook_Logo_Primary.svg"
+                  alt="Facebook"
+                />
+              </button>
+              <button
+                class="social-btn github"
+                aria-label="GitHub"
+                onclick="window.open('https://www.github.com/abdo-o-temraz', '_blank', 'noopener,noreferrer')"
+              >
+                <img
+                  class="icon"
+                  loading="lazy"
+                  src="SVG/github-mark.svg"
+                  alt="GitHub"
+                />
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="about" id="about">
+          <div class="section-header">
+            <p class="section-tag">Professional summary</p>
+            <h2>Data-driven thinker with hands-on development and teaching experience.</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card">
+              <p>
+                Computer Science undergraduate with a GPA of 3.09/4.0, focusing on
+                Python-based data analysis, web development, and technical instruction.
+                I’ve built data analysis projects using pandas, NumPy, matplotlib,
+                seaborn, and Streamlit, and I’ve taught these skills to student groups
+                in structured learning environments.
+              </p>
+            </div>
+            <div class="about-card">
+              <ul class="skill-list">
+                <li>Python Data Analysis</li>
+                <li>Web Development</li>
+                <li>Streamlit Projects</li>
+                <li>Technical Coaching</li>
+                <li>Git & Command Line</li>
+                <li>OOP & Algorithms</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="experience" id="experience">
+          <div class="section-header">
+            <p class="section-tag">Experience</p>
+            <h2>Practical experience in development, analysis, and education.</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-date">Aug 2025 – Oct 2025</span>
+              <div class="timeline-content">
+                <h3>Web Development Intern</h3>
+                <p class="timeline-company">Retouch.eg</p>
+                <p>
+                  Developed website pages for company job roles and paired application
+                  forms, improving the careers section structure and usability.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-date">2024 – Present</span>
+              <div class="timeline-content">
+                <h3>Data Analysis Instructor & Technical Web Developer</h3>
+                <p class="timeline-company">STP Student Activity</p>
+                <p>
+                  Co-instructed 6–7 sessions for students aged 15–18, teaching Python
+                  data analysis fundamentals and leading Streamlit project work. Built
+                  web forms for group operations and supported student learning from
+                  concept to completion.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-date">Jul 2026 – Present</span>
+              <div class="timeline-content">
+                <h3>Full Stack Development Scholar</h3>
+                <p class="timeline-company">DEPI (Digital Egypt Pioneers Initiative)</p>
+                <p>
+                  Enrolled in a government-backed six-month scholarship to strengthen
+                  backend and web development skills supporting data analysis and data
+                  science work.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects" id="projects">
+          <div class="section-header">
+            <p class="section-tag">Selected work</p>
+            <h2>Projects showing my technical and analytical foundation.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <span class="project-label">C++</span>
+              <h3>Employee Salary Management System</h3>
+              <p>
+                A C++ console application applying Object-Oriented Programming
+                principles to manage employee salary records efficiently.
+              </p>
+            </article>
+
+            <article class="project-card">
+              <span class="project-label">Java</span>
+              <h3>University Members Tree</h3>
+              <p>
+                A Java console application modeling university membership structure
+                using object-oriented hierarchy concepts and relationship mapping.
+              </p>
+            </article>
+
+            <article class="project-card">
+              <span class="project-label">Python</span>
+              <h3>Predictive Data Analysis Scripts</h3>
+              <p>
+                Python scripts for cleaning, exploring, and visualizing data with pandas,
+                NumPy, matplotlib, and seaborn, then applying predictive models.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="skills" id="skills">
+          <div class="section-header">
+            <p class="section-tag">Technical skills</p>
+            <h2>Core tools and technologies I use.</h2>
+          </div>
+
+          <div class="tags">
+            <span>Python</span>
+            <span>C++</span>
+            <span>Java</span>
+            <span>Dart</span>
+            <span>pandas</span>
+            <span>NumPy</span>
+            <span>matplotlib</span>
+            <span>seaborn</span>
+            <span>Streamlit</span>
+            <span>Git</span>
+            <span>Command Line</span>
+            <span>OOP</span>
+            <span>Data Analysis</span>
+            <span>Machine Learning</span>
+          </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <div class="contact-card">
+            <p class="section-tag">Contact</p>
+            <h2>Open to data analysis internships and development opportunities.</h2>
+            <a class="primary-btn" href="https://www.linkedin.com/in/abdo-o-temraz" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p class="footer">© 2025 Abdo Temraz. All rights reserved.</p>
+      </footer>
     </div>
 
-    <!-- Finisher script -->
     <script src="js/finisher-header.es5.min.js" type="text/javascript"></script>
     <script>
-new FinisherHeader({
-  "count": 3,  // fewer particles = calmer scene
-  "size": {
-    "min": 1200,
-    "max": 1800,
-    "pulse": 0
-  },
-  "speed": {
-    "x": { "min": 0.5, "max": 1 },  // much slower
-    "y": { "min": 0.5, "max": 1 }
-  },
-  "colors": {
-    "background": "#0d0221",  
-    "particles": [
-      "#ff07f",  
-      "#00ffff",  
-      "#ff00ff"
-    ]
-  },
-  "blending": "normal",  // prevents over-brightening
-  "opacity": {
-    "center": 3,  // softer particle opacity
-    "edge": -0.1
-  },
-  "skew": 0,
-  "shapes": ["c"]
-});
+      new FinisherHeader({
+        count: 3,
+        size: {
+          min: 1200,
+          max: 1800,
+          pulse: 0
+        },
+        speed: {
+          x: { min: 0.5, max: 1 },
+          y: { min: 0.5, max: 1 }
+        },
+        colors: {
+          background: '#0d0221',
+          particles: ['#ff07f', '#00ffff', '#ff00ff']
+        },
+        blending: 'normal',
+        opacity: {
+          center: 3,
+          edge: -0.1
+        },
+        skew: 0,
+        shapes: ['c']
+      });
     </script>
-    <footer>
-      <p class="footer">© 2025 Abdo Temraz. All rights reserved.</p>
-    </footer>
   </body>
 </html>
